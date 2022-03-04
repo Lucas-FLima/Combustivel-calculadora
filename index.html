@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <title>Cálculo Combustivel</title>
+</head>
+
+<body>
+    <main>
+        <section>
+            <div class="instruction">
+                <h1>Quanto gasto em combustível?</h1>
+                <p>Não use vírgula, use ponto para números decimais.</p>
+            </div>
+            <form action="GET">
+                <label for="cpkm">
+                    <h2>Consumo do veículo (km/l):</h2>
+                    <input type="number" name="cpikm" id="cpkmt">
+                </label>
+                <label for="vcl">
+                    <h2>Valor do combustível:</h2>
+                    <input type="number" name="vcl" id="vcl">
+                </label>
+                <label for="trajeto">
+                    <h2>Quantos km fará o veículo?</h2>
+                    <input type="number" name="trajeto" id="trajeto">
+                </label>
+                <div class="calcular">
+                    <button onclick="calcular(); return false;">Calcular</button>
+                    <button onclick="limpar(); return false;" style="margin-left: 25px;">Limpar</button>
+                </div>
+                <div>
+                    <h3 id="diario"> </h3>
+                </div>
+                <div>
+                    <h3 id="cincodias"> </h3>
+                </div>
+                <div>
+                    <h3 id="semana"> </h3>
+                </div>
+                <div>
+                    <h3 id="mes"> </h3>
+                </div>
+            </form>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+
+</html>
